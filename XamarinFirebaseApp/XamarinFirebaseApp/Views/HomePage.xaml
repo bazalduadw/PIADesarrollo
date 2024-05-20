@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFirebaseApp.Views.HomePage" NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <StackLayout Padding="16">
+            <Label Text="Bienvenido!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                   FontSize="Large"/>
+            <Label Text="" x:Name="LblUser"
+                   FontSize="Large"
+                   VerticalOptions="Center"></Label>
+            <StackLayout></StackLayout>
+            <StackLayout></StackLayout>
+            <Button x:Name="BtnStudentList" Clicked="BtnStudentList_Clicked" Text="Mis Reseñas" BackgroundColor="#14580E" TextColor="White" FontAttributes="Bold" CornerRadius="20" />
+            <StackLayout></StackLayout>
+            <StackLayout></StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150" />
+                    <RowDefinition Height="150" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Imagen 1 -->
+                <Image Source="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/01/ps-logo.jpg?tf=1200x" Aspect="AspectFill" Grid.Row="0" Grid.Column="0" />
+
+                <!-- Imagen 2 -->
+                <Image Source="https://s.yimg.com/ny/api/res/1.2/AVvlKmLJBaA1MtWvj2frlw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTQ4MA--/https://media.zenfs.com/es/levelup_525/501fb32967d9d01b65fc378162ba25be" Aspect="AspectFill" Grid.Row="0" Grid.Column="1" />
+
+                <!-- Imagen 3 -->
+                <Image Source="https://areajugones.sport.es/wp-content/uploads/2019/08/Nintendo.png" Aspect="AspectFill" Grid.Row="1" Grid.Column="0" />
+
+                <!-- Imagen 4 -->
+                <Image Source="https://static.vecteezy.com/system/resources/previews/020/336/729/non_2x/steam-logo-steam-icon-free-free-vector.jpg" Aspect="AspectFill" Grid.Row="1" Grid.Column="1" />
+            </Grid>
+            <StackLayout></StackLayout>
+            <StackLayout></StackLayout>
+            <StackLayout></StackLayout>
+
+            
+            <Button x:Name="BtnChangePassword" Clicked="BtnChangePassword_Clicked" Text="Cambiar contraseña" BackgroundColor="#14580E" TextColor="White" FontAttributes="Bold" CornerRadius="20" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

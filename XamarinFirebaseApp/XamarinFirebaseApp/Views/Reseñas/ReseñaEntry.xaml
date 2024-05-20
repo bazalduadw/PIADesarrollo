@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFirebaseApp.Views.Reseñas.ReseñaEntry">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <!-- StackLayout con el Label "Student Entry" -->
+            <StackLayout Padding="5" VerticalOptions="CenterAndExpand">
+                <Label Text="Agrega un juego"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    FontSize="Large"
+                       FontAttributes="Bold"/>
+            </StackLayout>
+
+            <!-- Resto del contenido -->
+            <StackLayout>
+                <StackLayout>
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Horizontal">
+                            <Entry x:Name="TxtName" Placeholder="Nombre del juego"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                
+                <StackLayout></StackLayout>
+                <StackLayout></StackLayout>
+                <StackLayout></StackLayout>
+
+                <StackLayout>
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Horizontal">
+                            <Entry x:Name="TxtPlataforma" Placeholder="Plataforma"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout></StackLayout>
+                <StackLayout></StackLayout>
+                <StackLayout></StackLayout>
+
+
+                <StackLayout>
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Horizontal">
+                            <Entry x:Name="TxtHoras" Placeholder="Horas jugadas"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout></StackLayout>
+                <StackLayout></StackLayout>
+                <StackLayout></StackLayout>
+
+
+                <StackLayout>
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Horizontal">
+                            <Entry x:Name="TxtDesc" Placeholder="Descripcion"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout></StackLayout>
+                <StackLayout></StackLayout>
+                <StackLayout></StackLayout>
+
+
+                <StackLayout>
+                    <Button x:Name="ButtonSave" Clicked="ButtonSave_Clicked" Text="Guardar" BackgroundColor="#14580E" TextColor="White" FontAttributes="Bold" CornerRadius="20" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

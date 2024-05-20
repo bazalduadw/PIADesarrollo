@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFirebaseApp.Views.LoginPage">
+
+    <StackLayout Padding="0">
+        <Grid>
+            <StackLayout Padding="0" Margin="0">
+                <Frame HeightRequest="150" HorizontalOptions="FillAndExpand" Padding="0">
+                    <Image Source="https://img.atom.com/story_images/visual_images/1629686839-GameWorld.io-01.jpg?class=show" Aspect="Fill" Margin="10"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout Margin="15, 110, 15, 0">
+                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="480" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                            <Label Text="INICIAR SESION" FontSize="Medium" FontAttributes="Bold"></Label>
+                        </StackLayout>
+
+                        <StackLayout Margin="0, 25, 0, 0">
+                            <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+                                        <Image Source="https://png.pngtree.com/png-clipart/20191120/original/pngtree-email-icon-png-image_5065641.jpg"/>
+
+                                    </Frame>
+                                    <Entry x:Name="TxtEmail" Placeholder="Ingrese un correo" TextColor="#14580E" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,15,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+                                        <Image Source="https://png.pngtree.com/png-vector/20190215/ourlarge/pngtree-vector-lock-icon-png-image_515444.jpg" Aspect="Fill" Margin="0"/>
+                                    </Frame>
+                                    <Entry x:Name="TxtPassword"  Placeholder="Contraseña" IsPassword="True" TextColor="#14580E" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <CheckBox IsChecked="false" Color="#14580E"/>
+                            <Label Text="Recordar" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+
+                            <Label Text="¿Olvidó su contraseña?" HorizontalTextAlignment="End" TextColor="#14580E" HorizontalOptions="EndAndExpand" FontAttributes="Bold" VerticalTextAlignment="Center">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer x:Name="ForgotTap"
+                                              Tapped="ForgotTap_Tapped"></TapGestureRecognizer>
+                                </Label.GestureRecognizers>
+                            </Label>
+
+
+                        </StackLayout>
+                        <Button x:Name="BtnSignIn" Clicked="BtnSignIn_Clicked" Text="ENTRAR" BackgroundColor="#14580E" TextColor="White" FontAttributes="Bold" CornerRadius="20" />
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Label Text="¿Todavia no te conectas?" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                            <Button Clicked="Register_Clicked" Text="Regístrate" HorizontalOptions="FillAndExpand"  TextColor="#14580E" FontAttributes="Bold" />
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>
